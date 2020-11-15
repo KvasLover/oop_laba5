@@ -32,6 +32,11 @@ namespace laba5
 
             UserClass userclass = new UserClass();
             userclass.DoAnswer();
+
+            // Использование операторов is и as.
+            Console.WriteLine(quest is Quest);
+            Quest quest2 = quest as Quest;
+            quest2.Show_date();
         }
     }
 }
