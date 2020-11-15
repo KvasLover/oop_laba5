@@ -4,8 +4,11 @@ using System.Text;
 
 namespace laba5
 {
-    public abstract class Quest
+    public class Quest : IRealizable
     {
-        public int Name { get; set; }
+        public virtual void Show_date()
+        {
+            Console.WriteLine("Дата не определена");
+        }
     }
 }

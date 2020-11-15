@@ -4,8 +4,12 @@ using System.Text;
 
 namespace laba5
 {
-    public class Final_Exam : Exam
+    // Sealed-класс (не может иметь потомков).
+    public sealed class Final_Exam : Exam
     {
-
+        public override void Show_date()
+        {
+            Console.WriteLine("Дата проведения выпускного экзамена: 03.01.2021.");
+        }
     }
 }
