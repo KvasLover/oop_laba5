@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace laba5
+{
+    class UserClass : BaseLook, IAnswer
+    {
+        void IAnswer.DoAnswer()
+        {
+            Console.WriteLine("(IAnswer)");            
+        }
+        public override void DoAnswer()
+        {
+            Console.WriteLine("(BaseLook) Ваш ответ: ");
+            if ((Convert.ToInt32(Console.ReadLine())) == 100)
+                Console.WriteLine("Это правильный ответ!");
+            else
+                Console.WriteLine("Это неправильный ответ!");
+        }
+
+    }
+}

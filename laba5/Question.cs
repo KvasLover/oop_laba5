@@ -10,6 +10,6 @@ namespace laba5
         public override void Show_date()
         {
             Console.WriteLine("Дата задания вопроса: 04.01.2021.");
-        }
+        }        
     }
 }

@@ -9,6 +9,6 @@ namespace laba5
         public virtual void Show_date()
         {
             Console.WriteLine("Дата не определена");
-        }
+        }        
     }
 }

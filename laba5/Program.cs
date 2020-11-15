@@ -29,6 +29,9 @@ namespace laba5
 
             // Не переопределённый метод ToString().
             Console.WriteLine(quest.ToString());
+
+            UserClass userclass = new UserClass();
+            userclass.DoAnswer();
         }
     }
 }
