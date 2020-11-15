@@ -11,5 +11,19 @@ namespace laba5
         {
             Console.WriteLine("Дата проведения выпускного экзамена: 03.01.2021.");
         }
+
+        // Переопределения методов System.Object.
+        public override int GetHashCode()
+        {            
+            return 100;
+        }
+        public override bool Equals(object obj)
+        {
+            return false;
+        }
+        public override string ToString()
+        {
+            return "*Строка*";
+        }        
     }
 }

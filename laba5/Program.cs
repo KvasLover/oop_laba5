@@ -24,6 +24,11 @@ namespace laba5
             // Question question = new Question();
             // (но можно создать класс-наследник).
 
+            // Переопределённый метод ToString().
+            Console.WriteLine(final_exam.ToString());
+
+            // Не переопределённый метод ToString().
+            Console.WriteLine(quest.ToString());
         }
     }
 }
