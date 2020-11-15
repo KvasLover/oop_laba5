@@ -30,6 +30,7 @@ namespace laba5
             // Не переопределённый метод ToString().
             Console.WriteLine(quest.ToString());
 
+            // 4)
             UserClass userclass = new UserClass();
             userclass.DoAnswer();
 
@@ -37,6 +38,12 @@ namespace laba5
             Console.WriteLine(quest is Quest);
             Quest quest2 = quest as Quest;
             quest2.Show_date();
+
+            // 6).
+            Console.WriteLine(exam.ToString());
+            Console.WriteLine(quest.ToString());
+            Console.WriteLine(test.ToString());
+            Console.WriteLine(final_exam.ToString());
         }
     }
 }

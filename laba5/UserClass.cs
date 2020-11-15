@@ -6,6 +6,12 @@ namespace laba5
 {
     class UserClass : BaseLook, IAnswer
     {
+        string Var = "UserClass";
+        public override string ToString()
+        {
+            return "Тип этого объекта: " + typeof(UserClass) + ". Значение поля этого объекта: " + this.Var + " .";
+        }
+
         void IAnswer.DoAnswer()
         {
             Console.WriteLine("(IAnswer)");            
