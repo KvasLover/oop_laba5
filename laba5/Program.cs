@@ -30,7 +30,7 @@ namespace laba5
             // Не переопределённый метод ToString().
             Console.WriteLine(quest.ToString());
 
-            // 4)
+            // 4).
             UserClass userclass = new UserClass();
             userclass.DoAnswer();
 
@@ -44,6 +44,14 @@ namespace laba5
             Console.WriteLine(quest.ToString());
             Console.WriteLine(test.ToString());
             Console.WriteLine(final_exam.ToString());
+
+            // 7).
+            IRealizable[] Array = { quest, test, exam };
+            Printer printer = new Printer();
+            for (int i = 0; i < Array.Length; i++)
+            {
+                printer.iAmPrinting(Array[i]);
+            }
         }
     }
 }
